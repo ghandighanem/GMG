@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:text="Welcome to our Application"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#800080"
+        android:textSize="32sp" />
+
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:text="Student"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="123dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher_background"
+            android:text="Teacher"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>
+

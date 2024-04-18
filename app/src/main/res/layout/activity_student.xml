@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".StudentActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate your Avarege"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#800080"
+            android:layout_marginBottom="150dp"
+
+            />
+
+
+        <!-- Add subject and mark input fields -->
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Subject" />
+
+        <EditText
+            android:id="@+id/editTextMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mark"
+            android:inputType="numberDecimal" />
+
+        <!-- Button to add subject and mark -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginTop="16dp"
+            android:onClick="addSubjectAndMark" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Added successfully"
+            android:textColor="#008000"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+
+        <!-- Button to calculate and show average -->
+        <Button
+                android:id="@+id/btnCalculateAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate Average"
+                android:layout_marginTop="16dp"
+                android:onClick="calculateAverage"
+                android:visibility="gone" />
+        <TextView
+                 android:id="@+id/textViewAverage"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average: "
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+
+
+    </LinearLayout>
